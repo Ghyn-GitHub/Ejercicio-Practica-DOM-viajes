@@ -1,0 +1,80 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: auto;;
+    color: white;
+    background-color: #303030;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.recomendados section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card-item {
+    border: none;
+}
+
+.card-content {
+    margin: 15px;
+}
+
+.select-options {
+    width: 100%;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    section {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .recomendados section{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .card-description {
+        font-size: small;
+    }
+
+    .destinos {
+        width: 75%;
+        margin: 0 auto;;
+    }
+
+    .card-item {
+    border: 1px solid grey;
+    }
+
+}
