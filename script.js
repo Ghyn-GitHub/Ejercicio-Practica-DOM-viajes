@@ -8,17 +8,17 @@ const data = [
   {
     title: "Example Title 1",
     description: loremText,
-    url_img: "../viajes/viajes-1.jpg"
+    url_img: "./viajes/viajes-1.jpg"
   },
   {
     title: "Example Title 2",
     description: loremText,
-    url_img: "../viajes/viajes-2.jpg"
+    url_img: "./viajes/viajes-2.jpg"
   },
   {
     title: "Example Title 3",
     description: loremText,
-    url_img: "../viajes/viajes-3.jpg"
+    url_img: "./viajes/viajes-3.jpg"
   }
 ];
 
@@ -63,7 +63,7 @@ formGroup.className = "selector-container";
 const selectElement = document.createElement("select");
 selectElement.id = "desplegable";
 selectElement.className = "select-options"
-selectElement.setAttribute("aria.label", "Selecciona una opción:");
+selectElement.setAttribute("aria-label", "Selecciona una opción:");
 
 const defaultOption = document.createElement("option");
 defaultOption.value = "";
